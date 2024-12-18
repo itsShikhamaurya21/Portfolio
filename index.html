@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav id="nav-bar">
+    <div class="logo">
+        Shikha Maurya
+    </div>
+    <div>
+    <ul class="nav-links">
+        <li><a href="#home" >Home</a></li>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#about">Experience</a></li> -->
+        <li><a href="#Skills">Skills</a></li>
+        <!-- <li><a href="#projects">Project</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+     <div class="logo">
+        Shikha Maurya
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#home"  onclick="toggleMenu()" >Home</a></li>
+            <li><a href="#about"  onclick="toggleMenu()" >About</a></li>
+            <!-- <li><a href="#exper"  onclick="toggleMenu()">Experience</a></li> -->
+            <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+            <!-- <li><a href="#projects" onclick="toggleMenu()">Project</a></li> -->
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+<section id="home">
+    <div class="section__pic-container">
+        <img src="WhatsApp Image 2024-10-08 at 10.58.36 PM.jpeg" alt="Shikha Maurya">
+    </div>
+    <div class="section__text">
+        <p class="section__text_p1">Hello, I'm </p><p class="title">  Shikha Maurya</p>
+        <p class="section__text_p2">Frontend Developer</p>
+        <!-- <p class="hero-section__text_p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat itaque sed corporis iure commodi beatae tenetur consequatur inventore, sit eos qui aperiam? Totam perspiciatis ea ullam nobis! Quas totam 
+            nemo temporibus quisquam ducimus esse dignissimos pariatur ut veniam eum?</p> -->
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./resume')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href('./contact')">Contact Info</button>
+        </div>
+       
+        <div id="social-container">
+            <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/shikha-maurya-shikha-maurya-5189262a9'" alt="my linkedin profile"></i>
+            <i class="fa-brands fa-github" alt="my  github profile" onclick="location.href='https://github.com/itsShikhamaurya21'"></i>
+            <i class="fa-brands fa-instagram" alt="My insta" onclick="location.href='https://www.instagram.com/in/shikha_kushwaha_21'"></i>
+        </div>
+    </div>
+</section>
+
+<!-- about section -->
+ <section id="about">
+    <p class="section__text_p1">Get To know more</p>
+    <h1 class="title1">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="WhatsApp Image 2024-10-08 at 10.58.36 PM.jpeg" alt="" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <!-- <img src="degree.jpg" alt=""> -->
+                    <i class="fa-solid fa-graduation-cap" class="icon"></i>
+                    <h3>Education</h3>
+                    <p>High School (2018-2020) <br>Intermediate (2020-2022) <br>
+                    pursuing BCA (2022-2025)</p>
+                </div>
+                <div class="details-container">
+                    <i class="fa-solid fa-rocket" class="icon"></i>
+                    
+                    <!-- <i class="fa-solid fa-badge-check" class="icon"></i> -->
+                    <h3>Internship</h3>
+                    <p>Qspider Noida (3 months) <br>capegemini (3 months)</p>
+                </div>
+            </div>
+            <p class="text-container">Hello!! I am pursuing my bachelor's degree in computer application.
+                Being computer student, I want to became a part of IT sector. Recently, I am diven toward the frontend part of the development.
+            </p>
+        </div>
+    </div>
+ </section>
+ <section id="Skills">
+    <p class="section__text_p1">Get Know My Skills</p>
+    <h1 class="title1">Skills</h1>
+    <div class="experience-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">HARD SKILLS</h2>
+                <div class="article-container">
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experience</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <!-- <i class="fa-solid fa-rocket" class="icon"></i> -->
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experience</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <div>
+                            <h3>Bootstrap</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <div>
+                            <h3>Node.js</h3>
+                            <p>Intermediate</p>
+                        </div>
+
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-check" class="icon"></i>
+                        <div>
+                            <h3>GIT & GITHUB</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">SOFT SKILLS</h2>
+                <div class="article-container">
+                    <article>
+                        <i class="fa-solid fa-heart" class="icon"></i>
+                        <!-- <i class="fa-solid fa-badge-check" class="icon"></i> -->
+                        <div>
+                            <h3>Time Management</h3>
+                            <!-- <p>Intermediate</p> -->
+                        </div>
+
+                    </article>
+
+                    <article>
+                        <!-- <i class="fa-solid fa-badge-check" class="icon"></i> -->
+                        <i class="fa-solid fa-heart" class="icon"></i>
+                        <div>
+                            <h3>Teamwork</h3>
+                            <!-- <p>Intermediate</p> -->
+                        </div>
+                        
+                    </article>
+                    <article>
+                        <!-- <i class="fa-solid fa-badge-check" class="icon"></i> -->
+                        <i class="fa-solid fa-heart" class="icon"></i>
+                        <div>
+                            <h3>Friendly & Positive Attitude</h3>
+                            <!-- <p>Intermediate</p> -->
+                        </div>
+                        
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-heart" class="icon"></i>
+                        <!-- <i class="fa-solid fa-badge-check" class="icon"></i> -->
+                        <div>
+                            <h3>Active Listening</h3>
+                            <!-- <p>Intermediate</p> -->
+                        </div>
+                        
+                    </article>
+                    <article>
+                        <!-- <i class="fa-solid fa-badge-check" class="icon"></i> -->
+                        <i class="fa-solid fa-heart" class="icon"></i>
+                        <div>
+                            <h3>Arts & Crafts</h3>
+                            <!-- <p>Intermediate</p> -->
+                        </div>
+                        
+                    </article>
+
+                    <article>
+                        <!-- <i class="fa-solid fa-badge-check" class="icon"></i> -->
+                        <i class="fa-solid fa-heart" class="icon"></i>
+                        <div>
+                            <h3>Calm under pressure</h3>
+                            <!-- <p>Intermediate</p> -->
+                        </div>
+                        
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ <section id="contact">
+    <p class="section__text_p1">Get touch with me</p>
+    <h1 class="title1">Contact Me</h1>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name" class="text">
+            <input type="email" placeholder="Email" class="text">
+        </div>
+
+        <div class="input-box">
+            <input type="number" placeholder="Phone Number" class="text">
+            <input type="text" placeholder="Subject" class="text">
+        </div>
+
+        <textarea name="" id="" cols="25" rows="15" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Me" class="btn">
+        
+    </form>
+
+
+ </section>
+ <footer class="footer">
+   <nav>
+    <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#about">Experience</a></li> -->
+                <li><a href="#Skills">Skills</a></li>
+                <!-- <li><a href="#projects">Project</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </div>
+   </nav>
+   <p>Copyright &#169; 2024 Shikha Maurya. All Rights Reserved</p>
+ </footer>
+
+ <script src="script .js"></script>
+</body>
+</html>

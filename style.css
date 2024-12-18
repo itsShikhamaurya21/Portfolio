@@ -1,0 +1,486 @@
+/* general styling */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "poppins",sans-serif;
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color:white;
+}
+
+/* transition */
+a, .btn{
+    transition:all 300ms ease;
+}
+
+/* nav-bar */
+nav, .nav-links {
+    display: flex;
+   
+
+}
+nav{
+    justify-content:space-around ;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links , .menu-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+.nav-links a , .menu-links a{
+    text-decoration: none;
+    color: white;
+    text-decoration-color: white;
+}
+.nav-links a:hover {
+    color:white;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: white;
+}
+.menu-links a:hover{
+    color:white;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color:white;
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+.logo:hover{
+    cursor: default;
+
+}
+/* hamburger menu */
+#hamburger-nav{
+    display: none;
+
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color:white;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    color: white;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    font-weight: 600;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform:   rotate(45deg) translate(10px,5px) ;
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px) ;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+
+/* section */
+section{
+    padding-top:4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section__pic-container{
+    display: flex;
+}
+/* profile */
+#home{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.section__pic-container img{
+    /* display: flex; */
+    height: 370px;
+    width: 350px;
+    border-radius:50%;
+    margin: auto 0;
+    box-shadow: 2px 2px 10px white;
+}
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-weight: 600;
+}
+/* p{
+    font-weight: 600;
+    color: white;
+}  */
+.section__text_p1{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color:white;
+}
+.section__text_p2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    /* text-decoration: underline; */
+}
+/* .section__text_p3{
+    color: white;
+} */
+
+.title{
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+    color: white;
+
+}
+.title:hover{
+    font-size: 2.1rem;
+    text-decoration: underline;
+    color:white ;
+}
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* icons */
+#social-container i{
+    cursor: pointer;
+    height: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: white;
+}
+#social-container i:hover{
+    font-size: 2.1rem;
+}
+/* button */
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.btn{
+    font-weight: 600;
+    transition: all 300s ease;
+    width: 8rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 0.8rem;
+}
+.btn-color-1,
+.btn-color-2{
+    border: white;
+}
+.btn-color-1:hover,
+.btn-color-2:hover{
+    cursor: pointer;
+}
+
+/* about */
+.title1{
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+.section-container{
+    display: flex;
+}
+#about{
+    position: relative;
+}
+.about-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.about-container,
+.about-details-container{
+    display: flex;
+}
+/* .about-pic{
+    border-radius: 2rem;
+} */
+
+.details-container{
+    color: white;
+    padding: 1.5rem;
+    flex: 1;
+    background:black;
+    border-radius: 2rem;
+    border: white 0.1rem solid;
+    border-color: white;
+    text-align: center; 
+    margin-bottom: 2rem;
+
+}
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+
+/* skills  */
+/* .icon{ */
+    /* margin: 80px; */
+    /* color: white;
+} */
+#Skills{
+    position: relative;
+}
+.experience-sub-title{
+    color: white;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+    text-align: center; 
+    
+
+}  
+article i{
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 1rem;
+    cursor: default;
+} 
+
+/* contact  */
+#contact form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+#contact .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#contact .input-box input
+{
+    width: 100%;
+    padding:1.3em;
+    font-size: 10px;
+    color: black;
+
+    background: white;
+    border: .8rem;
+    margin: 1rem 0;
+    resize: none;
+    border-radius: 0.8rem;
+}
+#contact textarea{
+    border-radius: 2rem;
+    width: 90%;
+    padding: 1rem 0 0 1rem;
+}
+.text{
+    font-size: 20em;
+}
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+    margin-top: 5em;
+
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+/* media queries */
+@media screen and (max-width: 1400px){
+    #home{
+        height: 83vh;
+        margin-bottom: 6rem;
+         display: flex; 
+}
+    .about-container{
+        flex-wrap: wrap;
+    }
+}  
+ @media screen and (max-width: 1200px){
+    #nav-bar{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+
+    }
+    #Skills, .experience-details-container{
+        margin-top: 2rem;
+    }
+    #home, .section-container{
+        display: block;
+        
+    }
+    section, .section-container{
+        height: fit-content;
+    }
+    section{
+        margin:0 5% ;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-container{
+        margin-top:0;
+    }
+} 
+@media screen and (max-width: 600px){
+    #contact,footer{
+        height: 40vh;
+    }
+    #home{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 1rem;
+
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-container,.btn-container{
+        flex-wrap: wrap;
+    }
+    .experience-sub-title{
+        font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container{
+        width: auto;
+        height: 46vh;
+        justify-content: center;
+    }
+    .section__text{
+        margin-top: 6rem;
+    }
+    .section__text_p2{
+        font-size: 1.25rem;
+    }
+    .title, .title1{
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+    .about-container{
+        margin-top: 5rem;
+       
+    }
+}
+    
+
+
